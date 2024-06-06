@@ -9,7 +9,7 @@
            makes a sticky, sweet treat with just a hint
            of salt that you'll keep coming back for.">
     <title>portoflio Rupesh</title>
-    <link rel="icon" href="imag/small.jpeg">
+    <link rel="icon" href="imag/small.png">
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,10 +53,10 @@
                     </div>
                     <nav class="nav">
                         <ul>
-                            <li><a href="#up" class="click" aria-label="home"><i class="fa-solid fa-house"></i>Home</a></li>
-                            <li><a href="#about" class="click1" aria-label="about"><i class="fa-regular fa-user"></i>About</a></li>
-                            <li><a href="#resume" class="click2" aria-label="resume"><i class="fa-regular fa-file"></i>Resume</a></li>
-                            <li><a href="#protoflio" class="click3" aria-label="protoflio"><i class="fa-solid fa-book-open"></i>Portfolio</a>
+                            <li><a href="#up"  aria-label="home"><i class="fa-solid fa-house"></i>Home</a></li>
+                            <li><a href="#about"  aria-label="about"><i class="fa-regular fa-user"></i>About</a></li>
+                            <li><a href="#resume"  aria-label="resume"><i class="fa-regular fa-file"></i>Resume</a></li>
+                            <li><a href="#protoflio"  aria-label="protoflio"><i class="fa-solid fa-book-open"></i>Portfolio</a>
                             </li>
                             <li><a href="#contact" class="click4" aria-label="contact"><i class="fa-regular fa-envelope"></i>Contact</a></li>
                         </ul>
@@ -66,11 +66,9 @@
                 <footer>
                     <p>&copy;Copyright iPortfolio Designed by Rupesh kumar</p>
                 </footer>
+               
             </div>
-            <div class="hide">
-                <a href="#" class="nons"><button class="btn nons"><i class="fa-solid fa-bars nons"></i></button></a>
-            </div>
-
+            
             <div class="sections">
                 <header id="up">
                     <div class="text">
@@ -115,7 +113,7 @@
                                             <li><i class="fa-solid fa-angle-right"></i><b>Degree:</b> <span>B.sc</span>
                                             </li>
                                             <li><i
-                                                    class="fa-solid fa-angle-right"></i><b>Email:</b><br><span>rupesh.k.light@gmail.com</span>
+                                                    class="fa-solid fa-angle-right"></i><b>Email:</b><br><span class="email">rupesh.k.light@gmail.com</span>
                                             </li>
                                             
                                         </ul>
@@ -383,6 +381,9 @@
                 </main>
             </div>
         </div>
+        <div class="hide">
+            <a href="#" class="nons"><button class="btn nons"><i class="fa-solid fa-bars nons"></i></button></a>
+        </div>
 
     </div>
 
@@ -402,30 +403,6 @@
             }
         };
         
-        function myFunction(z){
-        if(z.matches){
-        document.querySelector(".click").onclick = function (e) {
-            var x = document.querySelector(".aside");
-            x.style.display = "none";
-        }
-        document.querySelector(".click1").onclick = function (e) {
-            var x = document.querySelector(".aside");
-            x.style.display = "none";
-        }
-        document.querySelector(".click2").onclick = function (e) {
-            var x = document.querySelector(".aside");
-            x.style.display = "none";
-        }
-        document.querySelector(".click3").onclick = function (e) {
-            var x = document.querySelector(".aside");
-            x.style.display = "none";
-        }
-        document.querySelector(".click4").onclick = function (e) {
-            var x = document.querySelector(".aside");
-            x.style.display = "none";
-        }
-    }
-    }
     var z=window.matchMedia("(max-width:768px)")
     myFunction(z)
     z.addListener(myFunction);

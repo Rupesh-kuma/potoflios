@@ -1,6 +1,10 @@
 *,
 ::before,
 ::after {
+    /* margin: auto 0; */
+    box-sizing: border-box;
+}
+body{
     margin: 0;
     box-sizing: border-box;
 }
@@ -55,11 +59,12 @@ html {
 }
 
 .hide {
+    top: 3px;
     display: flex;
     display: none;
     justify-content: right;
     position: fixed;
-    right: 100px;
+    right: 56px;
     z-index: 900;
 }
 
@@ -241,7 +246,7 @@ h1 {
 }
 
 .small_img {
-    background: url("../imag/small.jpeg") no-repeat center/90% 324px;
+    background: url("../imag/small.png") no-repeat center/90% 324px;
 }
 
 .about h3 {
@@ -543,10 +548,10 @@ h1 {
 }
 
 .small_btn {
-    right: 44px;
+    right: 3px;
     position: fixed;
     display: flex;
-    bottom: 0px;
+    bottom: 5px;
     z-index: 96;
     transition: all 0.4s;
 }
@@ -589,7 +594,7 @@ h1 {
 }
 
 .profile_img .img {
-    background: url("../imag/small.jpeg") no-repeat center/120px 120px;
+    background: url("../imag/small.png") no-repeat center/120px 120px;
     height: 120px;
     width: 120px;
     border-radius: 50%;
@@ -658,7 +663,15 @@ h1 {
 .nav ul li:hover a {
     color: #fff;
 }
-
+footer{
+    position: absolute;
+    bottom: 9px;
+}
+@media screen and (min-width:1200px) {
+    .container{
+        max-width: 100%;
+    }
+}
 @media screen and (max-width:1200px) {
     .aside {
         height: 100vh;
@@ -687,14 +700,39 @@ h1 {
     }
     .container {
         max-width: 100%;
+        padding: 0;
     }
-
-
+    .email{
+        overflow-wrap: break-word;
+    }
+    .row .col-p-12 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .small_img {
+        height: 324px;
+    }
+    .about p {
+        padding: 14px;
+        line-height: 20px;
+        text-align: justify;
+    }
+    .nav {
+        padding: 30px 0 0 0px;
+    }
+    .about h3{
+        margin-top: 18px;
+    }
+    .sections {
+        flex: 1 0 auto;
+        max-width: 74%;
+    }
 }
 
 @media screen and (max-width:740px) {
     .container {
         max-width: 100%;
+        padding: 0;
     }
 
     .profile_img h1 {
@@ -725,13 +763,32 @@ h1 {
 
     .sections {
         flex: 1 0 auto;
+        max-width: 98%;
+    }
+    .email{
+        overflow-wrap: break-word;
+    }
+    .row .col-p-12 {
+        flex-basis: 100%;
         max-width: 100%;
+    }
+    .small_img {
+        height: 324px;
+    }
+    .about p {
+        padding: 14px;
+        line-height: 20px;
+        text-align: justify;
+    }
+    .nav {
+        padding: 30px 0 0 0px;
     }
 }
 
 @media screen and (max-width:412px) {
     .container {
         max-width: 100%;
+        padding: 0;
     }
 
     .row .col-p-12 {
@@ -770,5 +827,16 @@ h1 {
     header {
         height: 550px;
         background-size: 100% 550px;
+    }
+    .email{
+        overflow-wrap: break-word;
+    }
+    .about p {
+        padding: 14px;
+        line-height: 20px;
+        text-align: justify;
+    }
+    .nav {
+        padding: 30px 0 0 0px;
     }
 }
