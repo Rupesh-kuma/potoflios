@@ -452,6 +452,21 @@ h1 {
     height: 244px;
     position: relative;
 }
+.img_pro_10 {
+    background: url("../imag/tropolite.png") no-repeat center/90% 240px;
+    height: 244px;
+    position: relative;
+}
+.img_pro_11{
+    background: url("../imag/fitmeals.png") no-repeat center/90% 240px;
+    height: 244px;
+    position: relative;
+}
+.img_pro_12{
+    background: url("../imag/presento.png") no-repeat center/90% 240px;
+    height: 244px;
+    position: relative;
+}
 
 .none {
     display: none;
