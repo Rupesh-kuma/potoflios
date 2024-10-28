@@ -466,6 +466,26 @@ h1 {
     height: 244px;
     position: relative;
 }
+.img_pro_13{
+    background: url("../imag/becreative.png") no-repeat center/90% 240px;
+    height: 244px;
+    position: relative;
+}
+.img_pro_14{
+    background: url("../imag/doprime.png") no-repeat center/90% 240px;
+    height: 244px;
+    position: relative;
+}
+.img_pro_15{
+    background: url("../imag/demahesh.png") no-repeat center/90% 240px;
+    height: 244px;
+    position: relative;
+}
+.img_pro_16{
+    background: url("../imag/smb.png") no-repeat center/90% 240px;
+    height: 244px;
+    position: relative;
+}
 
 .none {
     display: none;
