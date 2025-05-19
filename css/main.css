@@ -491,6 +491,22 @@ h1 {
     height: 244px;
     position: relative;
 }
+.img_pro_17{
+    background: url("../imag/deep_automo.png") no-repeat center/90% 240px;
+    height: 244px;
+    position: relative;
+}
+.img_pro_18{
+    background: url("../imag/ag_interprice.png") no-repeat center/90% 240px;
+    height: 244px;
+    position: relative;
+}
+.img_pro_19{
+    background: url("../imag/Rapid.png") no-repeat center/90% 240px;
+    height: 244px;
+    position: relative;
+}
+
 
 .none {
     display: none;
