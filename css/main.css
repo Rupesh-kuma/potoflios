@@ -483,8 +483,22 @@ h1 {
 }
 .img_pro_15{
     background: url("../imag/drmaheshkatera.png") no-repeat center/90% 240px;
-    height: 244px;
-    position: relative;
+     height: 244px;
+  position: relative;
+  background-size: 90% auto;
+  overflow: hidden;
+}
+.img_pro_15:hover {
+  animation: scroll-bg 5s linear forwards;
+}
+
+@keyframes scroll-bg {
+  from {
+    background-position: center top;
+  }
+  to {
+    background-position: center bottom;
+  }
 }
 .img_pro_16{
     background: url("../imag/smb.png") no-repeat center/90% 240px;
